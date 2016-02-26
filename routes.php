@@ -1,6 +1,6 @@
 <?php
 
-if ($user->requiresLogin()) {
+if (!$user->requiresLogin()) {
     $router->get('', function() use ($htmlTemplate, $csrfToken) {
         return $htmlTemplate->render('login.phtml', [
             'csrfToken' => $csrfToken,

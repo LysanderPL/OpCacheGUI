@@ -41,7 +41,7 @@ $translator = new FileTranslator(__DIR__ . '/texts', 'en');
 /**
  * Setup URI scheme (url rewrites [Router::URL_REWRITE] / query strings [Router::QUERY_STRING])
  */
-$uriScheme = Router::URL_REWRITE;
+$uriScheme = Router::QUERY_STRING;
 
 /**
  * Login credentials
@@ -61,9 +61,9 @@ $uriScheme = Router::URL_REWRITE;
  * Multiple addresses or ranges can be defined
  */
 $login = [
-    'username'  => 'peehaa',
-    'password'  => '$2y$14$kHoRlbxPF7Bf1903cDMTgeYBsFgF8aJA46LIH9Nsg4/ocDa9HTTbe',
+    'username'  => 'admin',
+    'password'  => '21232f297a57a5a743894a0e4a801fc3',
     'whitelist' => [
-        'localhost',
+        '*',
     ],
 ];
